@@ -161,7 +161,7 @@
     <android.support.v7.widget.CardView
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:layout_margin="10dp"
+      android:layout_marginTop="10dp"
       android:padding="8dp"
       android:elevation="4dp">
 
@@ -217,7 +217,7 @@
     <android.support.v7.widget.CardView
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:layout_margin="10dp"
+      android:layout_marginTop="10dp"
       android:padding="8dp"
       android:elevation="4dp">
 
@@ -289,7 +289,7 @@
     <android.support.v7.widget.CardView
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:layout_margin="10dp"
+      android:layout_marginTop="10dp"
       android:padding="8dp"
       android:elevation="4dp">
 
@@ -302,6 +302,7 @@
           style="@style/card_image"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
+          android:scaleType="centerCrop"
           android:src="@drawable/newyear" />
 
         <TextView
@@ -364,7 +365,7 @@
     <android.support.v7.widget.CardView
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:layout_margin="10dp"
+      android:layout_marginTop="10dp"
       android:padding="8dp"
       android:elevation="4dp">
 
@@ -378,7 +379,8 @@
           style="@style/card_image"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:scaleType="fitXY"
+          android:scaleType="centerCrop"
+          android:layout_gravity="center_horizontal"
           android:src="@drawable/bangkokairways" />
 
         <TextView
