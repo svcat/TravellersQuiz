@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
   /**
    * This method is called when the View result button is clicked.
    */
-  public void totalScore (View view){
+  public void totalScore(View view) {
     ImageView bangkokairwaysImage = findViewById(R.id.stuffBangkokAirways);
     bangkokairwaysImage.setImageResource(R.drawable.bangkokairwaysanswer);
     String message = finalText(measureScore());
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
   /**
    * This method is called when the answers button is clicked.
    */
-  public void viewAnswers (View view){
+  public void viewAnswers(View view) {
     TextView bangkokTextView = findViewById(R.id.rightAnswerBangkok);
     bangkokTextView.setVisibility(View.VISIBLE);
 
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
   /**
    * This method is called when the Send result button is clicked. !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    */
-  public void sendResultByEmail (View view){
+  public void sendResultByEmail(View view) {
     String subject = getString(R.string.send_email_subject);
     String text = getString(R.string.send_email_text, measureScore(), TOTAL_QUESTIONS);
     composeEmail(subject, text);
@@ -71,11 +71,11 @@ public class MainActivity extends AppCompatActivity {
   /**
    * This method measure user's answer for question about Bangkok
    */
-  public boolean questionBangkok(){
-    EditText answerBangkokEditText = findViewById(R.id.bangkok);
+  public boolean questionBangkok() {
+    EditText answerBangkokEditText = findViewById(R.id.bangkok_lower_case);
     String answerBangkok = answerBangkokEditText.getText().toString();
 
-    if (answerBangkok.toLowerCase().equals(getString(R.string.bangkok))){
+    if (answerBangkok.toLowerCase().equals(getString(R.string.bangkok))) {
       return true;
     }
     return false;
@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
   /**
    * This method measure user's answer for question about BangkokAirways
    */
-  public boolean questionBangkokAirways(){
+  public boolean questionBangkokAirways() {
     CheckBox isVapeStatus = findViewById(R.id.vape);
     boolean isVape = isVapeStatus.isChecked();
 
@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
     CheckBox isPowerBankStatus = findViewById(R.id.powerBank);
     boolean isPowerBank = isPowerBankStatus.isChecked();
 
-    if ((isVape) && (isLighter) && (isSwatter) && (isPowerBank)){
+    if ((isVape) && (isLighter) && (isSwatter) && (isPowerBank)) {
       return true;
     }
     return false;
@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
   /**
    * This method measure user's answer for question about Durian
    */
-  public boolean questionDurian(){
+  public boolean questionDurian() {
     RadioButton isButterfliesStatus = findViewById(R.id.butterflies);
     boolean isButterflies = isButterfliesStatus.isChecked();
 
@@ -117,9 +117,9 @@ public class MainActivity extends AppCompatActivity {
     boolean isBColibri = isColibriStatus.isChecked();
 
     RadioButton isBatsStatus = findViewById(R.id.bats);
-    boolean isBats= isBatsStatus.isChecked();
+    boolean isBats = isBatsStatus.isChecked();
 
-    if (isBats){
+    if (isBats) {
       return true;
     }
     return false;
@@ -128,14 +128,15 @@ public class MainActivity extends AppCompatActivity {
   /**
    * This method measure user's answer for question about Kuala-Lumpur
    */
-  public boolean questionKualaLumpur(){
+  public boolean questionKualaLumpur() {
     EditText answerKualaLumpurEditText = findViewById(R.id.answer_Kuala_Lumpur);
     String answerKualaLumpur = answerKualaLumpurEditText.getText().toString();
 
-    if (answerKualaLumpur.toLowerCase().contains("lumpur kuala")){
+    if (answerKualaLumpur.toLowerCase().contains(getString(R.string.lumpur_kuala_lower_case))) {
       return false;
     }
-    if (answerKualaLumpur.toLowerCase().contains("kuala") && (answerKualaLumpur.toLowerCase().contains("lumpur"))){
+    if (answerKualaLumpur.toLowerCase().contains(getString(R.string.kuala_lower_case))
+        && (answerKualaLumpur.toLowerCase().contains(getString(R.string.lumpur_lower_case)))) {
       return true;
     }
     return false;
@@ -144,14 +145,14 @@ public class MainActivity extends AppCompatActivity {
   /**
    * This method measure user's answer for question about Spacewar
    */
-  public boolean questionSpacewar(){
+  public boolean questionSpacewar() {
     RadioButton isYesStatus = findViewById(R.id.yes);
     boolean isYes = isYesStatus.isChecked();
 
     RadioButton isNoStatus = findViewById(R.id.no);
     boolean isNo = isNoStatus.isChecked();
 
-    if (isYes){
+    if (isYes) {
       return true;
     }
     return false;
@@ -160,7 +161,7 @@ public class MainActivity extends AppCompatActivity {
   /**
    * This method measure user's answer for question about Thai New Year
    */
-  public boolean questionThaiNewYear(){
+  public boolean questionThaiNewYear() {
     CheckBox isTraditionalStatus = findViewById(R.id.traditional);
     boolean isTraditional = isTraditionalStatus.isChecked();
 
@@ -173,7 +174,7 @@ public class MainActivity extends AppCompatActivity {
     CheckBox isVietnameseStatus = findViewById(R.id.vietnamese);
     boolean isVietnamese = isVietnameseStatus.isChecked();
 
-    if ((isTraditional) && (isChinese) && (isThai) && (!isVietnamese)){
+    if ((isTraditional) && (isChinese) && (isThai) && (!isVietnamese)) {
       return true;
     }
     return false;
@@ -194,25 +195,25 @@ public class MainActivity extends AppCompatActivity {
   /**
    * This method measure user's total score
    */
-  public int measureScore (){
+  public int measureScore() {
     int score = 0;
-    if (questionBangkokAirways()){
-      score = score +1;
+    if (questionBangkokAirways()) {
+      score = score + 1;
     }
-    if (questionThaiNewYear()){
-      score = score +1;
+    if (questionThaiNewYear()) {
+      score = score + 1;
     }
-    if (questionSpacewar()){
-      score = score +1;
+    if (questionSpacewar()) {
+      score = score + 1;
     }
-    if (questionDurian()){
-      score = score +1;
+    if (questionDurian()) {
+      score = score + 1;
     }
-    if (questionKualaLumpur()){
-      score = score +1;
+    if (questionKualaLumpur()) {
+      score = score + 1;
     }
-    if (questionBangkok()){
-      score = score +1;
+    if (questionBangkok()) {
+      score = score + 1;
     }
     return score;
   }
@@ -220,7 +221,7 @@ public class MainActivity extends AppCompatActivity {
   /**
    * This method for sending emails !!!!!!!!!!!!!!!!
    */
-  public void composeEmail (String subject, String text){
+  public void composeEmail(String subject, String text) {
     Intent intent = new Intent(Intent.ACTION_SEND);
     intent.setType("*/*");
     intent.putExtra(Intent.EXTRA_SUBJECT, subject);
@@ -241,7 +242,7 @@ public class MainActivity extends AppCompatActivity {
   /**
    * This method displays create final text with score result
    */
-  private String finalText (int score){
+  private String finalText(int score) {
     return getString(R.string.your_total_score, score, TOTAL_QUESTIONS);
   }
 

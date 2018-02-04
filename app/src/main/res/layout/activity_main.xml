@@ -41,7 +41,7 @@
           android:text="@string/question_capital_of_thailand" />
 
         <EditText
-          android:id="@+id/bangkok"
+          android:id="@+id/bangkok_lower_case"
           style="@style/card_answers_variants"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"

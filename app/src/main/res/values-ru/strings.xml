@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Заметки путешественников</string>
+  <string name="question_capital_of_thailand">Столица Тайланда?</string>
+  <string name="hint_user_answer">Ваш ответ</string>
+  <string name="right_answer_bangkok">Бангкок! В Тайланде он также известен как  Krung Thep Maha Nakhon</string>
+  <string name="question_baggage_at_bangkok_airways">Что запрещается к перевозке в багаже авиакомпании Bangkok Airways?</string>
+  <string name="answer_vape">Электронные сигареты</string>
+  <string name="answer_lighter">Зажигалка</string>
+  <string name="answer_swatter">Электрическая мухобойка</string>
+  <string name="answer_power_bank">Портативная зарядка</string>
+  <string name="answer_bangkok_airways">Вы не можете провезти в багаже ни один из этих предметов =(</string>
+  <string name="question_durian">Кто опыляет цветки дуриана?</string>
+  <string name="right_answer_bats">Летучие мыши, потому что цветки дуриана расцветает ночью</string>
+  <string name="question_capital_of_malaysia">Столица Малайзии?</string>
+  <string name="answer_kuala_lumpur">Куала-Лумпур обозначает \"Грязное впадение\" (рек)</string>
+  <string name="answer_first_computer_game">Spacewar - первая компьютерная игра?</string>
+  <string name="yes">Да</string>
+  <string name="no">Нет</string>
+  <string name="answer_yes">Да, это было в 1962 году</string>
+  <string name="question_new_year_in_thai">Какой Новый год отмечается в Тайланде?</string>
+  <string name="traditional_new_year">Традиционный Новый Год</string>
+  <string name="chinese_new_year">Китайский Новый Год</string>
+  <string name="thai_new_year">Тайский Новый Год</string>
+  <string name="vietnamese_new_year">Вьетнамский Новый Год</string>
+  <string name="answer_thai_new_year">Тайцы празднуют Тайский Новый Год - Сонгкран, так же, как и Традиционный и Китайский Новый Год</string>
+  <string name="button_view_result">Проверить результат</string>
+  <string name="button_view_answers">Посмотреть ответы</string>
+  <string name="button_send_result">Поделиться результатом</string>
+  <string name="answer_butterflies">Бабочки</string>
+  <string name="answer_night_mothes">Ночные мотыльки</string>
+  <string name="answer_colibri">Колибри</string>
+  <string name="answerbats">Летучие мыши</string>
+  <string name="your_total_score">Ваш результат:  %1$d из %2$d!</string>
+  <string name="you_final_result">Ваш окончательный результат</string>
+  <string name="bangkok">бангкок</string>
+  <string name="kuala_lower_case">куала</string>
+  <string name="lumpur_lower_case">лумпур</string>
+  <string name="lumpur_kuala_lower_case">лумпур куала</string>
+  <string name="send_email_text">Привет!\nЯ получил %1$d баллов из %2$d в тесте от \"Заметок путешественников\" (https://t.me/travelernote). Интересно, сколько получишь ты? :) \nhttps://github.com/svcat/TravellersQuiz</string>
+  <string name="send_email_subject">Мой результат теста от Заметок Путешественников</string>
+</resources>

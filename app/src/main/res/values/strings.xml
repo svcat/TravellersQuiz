@@ -22,10 +22,10 @@
   <string name="chinese_new_year">Chinese New Year</string>
   <string name="thai_new_year">Thai New Year</string>
   <string name="vietnamese_new_year">Vietnamese New Year</string>
-  <string name="answer_thai_new_year">There are celebrating Thai New Year - Songkran.  Traditional and Chinese New Year are celebrating as well.</string>
+  <string name="answer_thai_new_year">They are celebrating Thai New Year - Songkran. Traditional and Chinese New Year are celebrating as well.</string>
   <string name="button_view_result">View result</string>
   <string name="button_view_answers">View answers</string>
-  <string name="button_send_result">Send result</string>
+  <string name="button_send_result">Share result</string>
   <string name="answer_butterflies">Butterflies</string>
   <string name="answer_night_mothes">Night mothes</string>
   <string name="answer_colibri">Colibri</string>
@@ -33,6 +33,9 @@
   <string name="your_total_score">Your total score: %1$d from %2$d!</string>
   <string name="you_final_result">Your final result: </string>
   <string name="bangkok">bangkok</string>
-  <string name="send_email_text">Hey! \nMy total score in Travelers\' notes quiz: %1$d from %2$d! \nYou can find this amazing app on GitHub: </string>
+  <string name="send_email_text">Hey!\nMy total score in Travelers\' notes quiz: %1$d from %2$d! (https://t.me/travelernote) \nYou can find this amazing app on GitHub: https://github.com/svcat/TravellersQuiz</string>
   <string name="send_email_subject">My score from Travelers\\\' notes quiz</string>
+  <string name="kuala_lower_case">kuala</string>
+  <string name="lumpur_lower_case">lumpur</string>
+  <string name="lumpur_kuala_lower_case">lumpur kuala</string>
 </resources>
