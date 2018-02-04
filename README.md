@@ -4,7 +4,7 @@ Hi there!
 
 Here is my final project for the Google Challenge Scholarship: Android Basics.
 
-We should have created a quiz. I like to travel and I have a channel in Telegram app where I post interestiong (from my point of view :) info about different countries (https://t.me/travelernote). So I decided to combine these two exciting things.
+We should have created a quiz. I like to travel and I have a channel in Telegram app where I post interesting (from my point of view :) info about different countries (https://t.me/travelernote). So I decided to combine these two exciting things.
  
 Have fun! :)
 
