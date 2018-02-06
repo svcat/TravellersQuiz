@@ -24,9 +24,9 @@
   <string name="thai_new_year">Тайский Новый Год</string>
   <string name="vietnamese_new_year">Вьетнамский Новый Год</string>
   <string name="answer_thai_new_year">Тайцы празднуют Тайский Новый Год - Сонгкран, так же, как и Традиционный и Китайский Новый Год</string>
-  <string name="button_view_result">Проверить результат</string>
-  <string name="button_view_answers">Посмотреть ответы</string>
-  <string name="button_send_result">Поделиться результатом</string>
+  <string name="button_view_result">Мой результат</string>
+  <string name="button_view_answers">Oтветы</string>
+  <string name="button_send_result">Поделиться</string>
   <string name="answer_butterflies">Бабочки</string>
   <string name="answer_night_mothes">Ночные мотыльки</string>
   <string name="answer_colibri">Колибри</string>

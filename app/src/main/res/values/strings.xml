@@ -23,9 +23,9 @@
   <string name="thai_new_year">Thai New Year</string>
   <string name="vietnamese_new_year">Vietnamese New Year</string>
   <string name="answer_thai_new_year">They are celebrating Thai New Year - Songkran. Traditional and Chinese New Year are celebrating as well.</string>
-  <string name="button_view_result">View result</string>
-  <string name="button_view_answers">View answers</string>
-  <string name="button_send_result">Share result</string>
+  <string name="button_view_result">My Result</string>
+  <string name="button_view_answers">Answers</string>
+  <string name="button_send_result">Share</string>
   <string name="answer_butterflies">Butterflies</string>
   <string name="answer_night_mothes">Night mothes</string>
   <string name="answer_colibri">Colibri</string>
