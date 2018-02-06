@@ -1,504 +1,528 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:tools="http://schemas.android.com/tools"
-  android:layout_width="match_parent"
-  android:layout_height="match_parent"
-  tools:context="com.example.android.travelersnotesquiz.MainActivity">
-
-  <LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:padding="16dp"
-    android:background="@drawable/backgroundthree"
-    android:orientation="vertical">
+    android:layout_height="match_parent"
+    tools:context="com.example.android.travelersnotesquiz.MainActivity">
 
-    /**
-    * CardView with 1 EditText. Bangkok
-    */
-    <android.support.v7.widget.CardView
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="10dp"
-      android:padding="8dp"
-      android:elevation="4dp">
-
-      <LinearLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:background="@drawable/backgroundthree"
+        android:orientation="vertical"
+        android:padding="16dp">
 
-        <ImageView
-          style="@style/card_image"
-          android:layout_width="match_parent"
-          android:layout_height="300dp"
-          android:scaleType="centerCrop"
-          android:src="@drawable/bangkok" />
+        /**
+        * CardView with 1 EditText. Bangkok
+        */
 
-        <TextView
-          style="@style/card_question"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="@string/question_capital_of_thailand" />
-
-        <EditText
-          android:id="@+id/bangkok_lower_case"
-          style="@style/card_answers_variants"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:hint="@string/hint_user_answer"
-          android:inputType="textCapWords" />
-
-        <TextView
-          android:id="@+id/isRightAnswerBangkok"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:visibility="gone" />
-
-        <TextView
-          android:id="@+id/rightAnswerBangkok"
-          style="@style/card_right_answer"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="@string/right_answer_bangkok"
-          android:visibility="gone" />
-
-
-      </LinearLayout>
-
-
-    </android.support.v7.widget.CardView>
-
-    /**
-    * CardView with 4 RadioButtons in RelativeLayout. Durian
-    */
-    <android.support.v7.widget.CardView
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="10dp"
-      android:padding="8dp"
-      android:elevation="4dp">
-
-      <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <ImageView
-          style="@style/card_image"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:scaleType="centerCrop"
-          android:src="@drawable/durian" />
-
-        <TextView
-          android:id="@+id/questionForDurian"
-          style="@style/card_question"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="@string/question_durian" />
-
-        <RadioGroup
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:orientation="vertical">
-
-          //Butterflies
-          <RadioButton
-            android:id="@+id/butterflies"
-            style="@style/card_answers_variants"
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/answer_butterflies" />
+            android:layout_marginTop="10dp"
+            android:elevation="4dp"
+            android:padding="8dp">
 
-          //Night mothes
-          <RadioButton
-            android:id="@+id/night_mothes"
-            style="@style/card_answers_variants"
+            <LinearLayout
+                style="@style/cardPaddingBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/card_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bangkok" />
+
+                <TextView
+                    style="@style/card_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_capital_of_thailand" />
+
+                <EditText
+                    android:id="@+id/bangkok_lower_case"
+                    style="@style/card_answers_variants"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_user_answer"
+                    android:inputType="textCapWords" />
+
+                <TextView
+                    android:id="@+id/isRightAnswerBangkok"
+                    style="@style/card_right_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/rightAnswerBangkok"
+                    style="@style/card_right_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/right_answer_bangkok"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        /**
+        * CardView with 4 RadioButtons in RelativeLayout. Durian
+        */
+
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/answer_night_mothes" />
+            android:layout_marginTop="10dp"
+            android:elevation="4dp"
+            android:padding="8dp">
 
-          //Colibri
-          <RadioButton
-            android:id="@+id/colibri"
-            style="@style/card_answers_variants"
+            <LinearLayout
+                style="@style/cardPaddingBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/card_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/durian" />
+
+                <TextView
+                    android:id="@+id/questionForDurian"
+                    style="@style/card_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_durian" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    //Butterflies
+
+                    <RadioButton
+                        android:id="@+id/butterflies"
+                        style="@style/card_answers_variants"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/answer_butterflies" />
+
+                    //Night mothes
+
+                    <RadioButton
+                        android:id="@+id/night_mothes"
+                        style="@style/card_answers_variants"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/answer_night_mothes" />
+
+                    //Colibri
+
+                    <RadioButton
+                        android:id="@+id/colibri"
+                        style="@style/card_answers_variants"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/answer_colibri" />
+
+                    //Bats
+
+                    <RadioButton
+                        android:id="@+id/bats"
+                        style="@style/card_answers_variants"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/answerbats" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/isRightAnswerDurian"
+                    style="@style/card_right_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/rightAnswerDurian"
+                    style="@style/card_right_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/right_answer_bats"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        /**
+        * CardView with 1 EditText. Kuala-Lumpur
+        */
+
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/answer_colibri" />
+            android:layout_marginTop="10dp"
+            android:elevation="4dp"
+            android:padding="8dp">
 
-          //Bats
-          <RadioButton
-            android:id="@+id/bats"
-            style="@style/card_answers_variants"
+            <LinearLayout
+                style="@style/cardPaddingBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/card_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/kualalumpur" />
+
+                <TextView
+                    style="@style/card_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_capital_of_malaysia" />
+
+                <EditText
+                    android:id="@+id/answer_Kuala_Lumpur"
+                    style="@style/card_answers_variants"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_user_answer"
+                    android:inputType="textCapWords" />
+
+                <TextView
+                    android:id="@+id/isRightAnswerKualaLumpur"
+                    style="@style/card_right_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/rightAnswerKualaLumpur"
+                    style="@style/card_right_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answer_kuala_lumpur"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        /**
+        * CardView with 2 RadioButtons in LinearLayout. Spacewar
+        */
+
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/answerbats" />
+            android:layout_marginTop="10dp"
+            android:elevation="4dp"
+            android:padding="8dp">
 
-        </RadioGroup>
+            <LinearLayout
+                style="@style/cardPaddingBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-        <TextView
-          android:id="@+id/isRightAnswerDurian"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:visibility="gone" />
+                <ImageView
+                    style="@style/card_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/spacewar" />
 
-        <TextView
-          android:id="@+id/rightAnswerDurian"
-          style="@style/card_right_answer"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="@string/right_answer_bats"
-          android:visibility="gone" />
+                <TextView
+                    style="@style/card_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answer_first_computer_game" />
 
-      </LinearLayout>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
+                    <RadioButton
+                        android:id="@+id/yes"
+                        style="@style/card_answers_variants"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/yes" />
 
-    </android.support.v7.widget.CardView>
+                    <RadioButton
+                        android:id="@+id/no"
+                        style="@style/card_answers_variants"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/no" />
 
-    /**
-    * CardView with 1 EditText. Kuala-Lumpur
-    */
-    <android.support.v7.widget.CardView
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="10dp"
-      android:padding="8dp"
-      android:elevation="4dp">
+                </RadioGroup>
 
-      <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+                <TextView
+                    android:id="@+id/isRightAnswerSpacewar"
+                    style="@style/card_right_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
 
-        <ImageView
-          style="@style/card_image"
-          android:layout_width="match_parent"
-          android:layout_height="400dp"
-          android:scaleType="centerCrop"
-          android:src="@drawable/kualalumpur" />
+                <TextView
+                    android:id="@+id/rightAnswerSpacewar"
+                    style="@style/card_right_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answer_yes"
+                    android:visibility="gone" />
 
-        <TextView
-          style="@style/card_question"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="@string/question_capital_of_malaysia" />
-
-        <EditText
-          android:id="@+id/answer_Kuala_Lumpur"
-          style="@style/card_answers_variants"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:hint="@string/hint_user_answer"
-          android:inputType="textCapWords" />
-
-        <TextView
-          android:id="@+id/isRightAnswerKualaLumpur"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text=""
-          android:visibility="gone" />
-
-        <TextView
-          android:id="@+id/rightAnswerKualaLumpur"
-          style="@style/card_right_answer"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="@string/answer_kuala_lumpur"
-          android:visibility="gone" />
-
-      </LinearLayout>
+            </LinearLayout>
 
 
-    </android.support.v7.widget.CardView>
+        </android.support.v7.widget.CardView>
 
-    /**
-    * CardView with 2 RadioButtons in LinearLayout. Spacewar
-    */
-    <android.support.v7.widget.CardView
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="10dp"
-      android:padding="8dp"
-      android:elevation="4dp">
+        /**
+        * CardView with 4 CheckBoxes. Thai New Year
+        */
 
-      <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <ImageView
-          style="@style/card_image"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:scaleType="centerCrop"
-          android:src="@drawable/spacewar" />
-
-        <TextView
-          style="@style/card_question"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="@string/answer_first_computer_game" />
-
-        <RadioGroup
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:orientation="horizontal">
-
-          <RadioButton
-            android:id="@+id/yes"
-            style="@style/card_answers_variants"
-            android:layout_width="0dp"
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/yes" />
+            android:layout_marginTop="10dp"
+            android:elevation="4dp"
+            android:padding="8dp">
 
-          <RadioButton
-            android:id="@+id/no"
-            style="@style/card_answers_variants"
-            android:layout_width="0dp"
+            <LinearLayout
+                style="@style/cardPaddingBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/card_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/newyear" />
+
+                <TextView
+                    style="@style/card_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_new_year_in_thai" />
+
+                <CheckBox
+                    android:id="@+id/traditional"
+                    style="@style/card_answers_variants"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/traditional_new_year" />
+
+                <CheckBox
+                    android:id="@+id/chinese"
+                    style="@style/card_answers_variants"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chinese_new_year" />
+
+                <CheckBox
+                    android:id="@+id/thai"
+                    style="@style/card_answers_variants"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/thai_new_year" />
+
+                <CheckBox
+                    android:id="@+id/vietnamese"
+                    style="@style/card_answers_variants"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vietnamese_new_year" />
+
+                <TextView
+                    android:id="@+id/isRightAnswerThaiNewYear"
+                    style="@style/card_right_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/rightAnswerThaiNewYear"
+                    style="@style/card_right_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answer_thai_new_year"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        /**
+        * CardView with 4 CheckBoxes. Bangkok Airways
+        */
+
+        <android.support.v7.widget.CardView
+            style="@style/cardPaddingBottom"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/no" />
+            android:layout_marginTop="10dp"
+            android:elevation="4dp"
+            android:padding="8dp">
 
-        </RadioGroup>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
+                <ImageView
+                    android:id="@+id/stuffBangkokAirways"
+                    style="@style/card_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bangkokairways" />
 
-        <TextView
-          android:id="@+id/isRightAnswerSpacewar"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text=""
-          android:visibility="gone" />
+                <TextView
+                    style="@style/card_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_baggage_at_bangkok_airways" />
 
-        <TextView
-          android:id="@+id/rightAnswerSpacewar"
-          style="@style/card_right_answer"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="@string/answer_yes"
-          android:visibility="gone" />
+                <CheckBox
+                    android:id="@+id/vape"
+                    style="@style/card_answers_variants"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answer_vape" />
 
-      </LinearLayout>
+                <CheckBox
+                    android:id="@+id/lighter"
+                    style="@style/card_answers_variants"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answer_lighter" />
 
+                <CheckBox
+                    android:id="@+id/swatter"
+                    style="@style/card_answers_variants"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answer_swatter" />
 
-    </android.support.v7.widget.CardView>
+                <CheckBox
+                    android:id="@+id/powerBank"
+                    style="@style/card_answers_variants"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answer_power_bank" />
 
-    /**
-    * CardView with 4 CheckBoxes. Thai New Year
-    */
-    <android.support.v7.widget.CardView
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="10dp"
-      android:padding="8dp"
-      android:elevation="4dp">
+                <TextView
+                    android:id="@+id/isRightAnswerBangkokAirways"
+                    style="@style/card_right_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
 
-      <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+                <TextView
+                    android:id="@+id/rightAnswerBangkokAirways"
+                    style="@style/card_right_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answer_bangkok_airways"
+                    android:visibility="gone" />
 
-        <ImageView
-          style="@style/card_image"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:scaleType="centerCrop"
-          android:src="@drawable/newyear" />
-
-        <TextView
-          style="@style/card_question"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="@string/question_new_year_in_thai" />
-
-        <CheckBox
-          android:id="@+id/traditional"
-          style="@style/card_answers_variants"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="@string/traditional_new_year" />
-
-        <CheckBox
-          android:id="@+id/chinese"
-          style="@style/card_answers_variants"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="@string/chinese_new_year" />
-
-        <CheckBox
-          android:id="@+id/thai"
-          style="@style/card_answers_variants"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="@string/thai_new_year" />
-
-        <CheckBox
-          android:id="@+id/vietnamese"
-          style="@style/card_answers_variants"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="@string/vietnamese_new_year" />
-
-        <TextView
-          android:id="@+id/isRightAnswerThaiNewYear"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text=""
-          android:visibility="gone" />
-
-        <TextView
-          android:id="@+id/rightAnswerThaiNewYear"
-          style="@style/card_right_answer"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="@string/answer_thai_new_year"
-          android:visibility="gone" />
-
-      </LinearLayout>
+            </LinearLayout>
 
 
-    </android.support.v7.widget.CardView>
+        </android.support.v7.widget.CardView>
 
-    /**
-    * CardView with 4 CheckBoxes. Bangkok Airways
-    */
-    <android.support.v7.widget.CardView
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="10dp"
-      android:padding="8dp"
-      android:elevation="4dp">
+        /**
+        * CardView with 1 TextView. Total score
+        */
 
-      <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:elevation="4dp"
+            android:padding="8dp">
 
-        <ImageView
-          android:id="@+id/stuffBangkokAirways"
-          style="@style/card_image"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:scaleType="centerCrop"
-          android:layout_gravity="center_horizontal"
-          android:src="@drawable/bangkokairways" />
+            <TextView
+                android:id="@+id/finalScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center_horizontal"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
 
-        <TextView
-          style="@style/card_question"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="@string/question_baggage_at_bangkok_airways" />
+        </android.support.v7.widget.CardView>
 
-        <CheckBox
-          android:id="@+id/vape"
-          style="@style/card_answers_variants"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="@string/answer_vape" />
+        /**
+        * 3 action buttons for View answers, View Result, Send mail with result
+        */
 
-        <CheckBox
-          android:id="@+id/lighter"
-          style="@style/card_answers_variants"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="@string/answer_lighter" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <CheckBox
-          android:id="@+id/swatter"
-          style="@style/card_answers_variants"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="@string/answer_swatter" />
+            //View result
 
-        <CheckBox
-          android:id="@+id/powerBank"
-          style="@style/card_answers_variants"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="@string/answer_power_bank" />
+            <Button
+                android:id="@+id/viewResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:onClick="showTotalScore"
+                android:text="@string/button_view_result"
+                android:textSize="16sp" />
 
-        <TextView
-          android:id="@+id/isRightAnswerBangkokAirways"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:visibility="gone" />
+            //View answers
 
-        <TextView
-          android:id="@+id/rightAnswerBangkokAirways"
-          style="@style/card_right_answer"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="@string/answer_bangkok_airways"
-          android:visibility="gone" />
+            <Button
+                android:id="@+id/answers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/viewResult"
+                android:onClick="viewAnswers"
+                android:text="@string/button_view_answers"
+                android:textSize="14sp" />
 
-      </LinearLayout>
+            //Send result
 
+            <Button
+                android:id="@+id/sendResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/viewResult"
+                android:onClick="sendResultByEmail"
+                android:text="@string/button_send_result"
+                android:textSize="14sp" />
 
-    </android.support.v7.widget.CardView>
+        </RelativeLayout>
 
-    /**
-    * CardView with 1 TextView. Total score
-    */
-    <android.support.v7.widget.CardView
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_margin="10dp"
-      android:padding="8dp"
-      android:elevation="4dp">
-
-      <TextView
-        android:id="@+id/finalScore"
-        android:textStyle="bold"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:gravity="center_horizontal"
-        android:textSize="24sp"
-        android:visibility="gone" />
-
-    </android.support.v7.widget.CardView>
-
-    /**
-    * 3 action buttons for Reset, View Result, Send mail with result
-    */
-    <RelativeLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content">
-
-      //View result
-      <Button
-        android:id="@+id/viewResult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:onClick="showTotalScore"
-        android:text="@string/button_view_result"
-        android:textSize="16sp" />
-
-      //View answers
-      <Button
-        android:id="@+id/answers"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@id/viewResult"
-        android:onClick="viewAnswers"
-        android:text="@string/button_view_answers"
-        android:textSize="14sp" />
-
-      //Send result
-      <Button
-        android:id="@+id/sendResult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_below="@id/viewResult"
-        android:onClick="sendResultByEmail"
-        android:text="@string/button_send_result"
-        android:textSize="14sp" />
-
-    </RelativeLayout>
-
-  </LinearLayout>
+    </LinearLayout>
 
 </ScrollView>

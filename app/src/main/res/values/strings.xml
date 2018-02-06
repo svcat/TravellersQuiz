@@ -31,11 +31,13 @@
   <string name="answer_colibri">Colibri</string>
   <string name="answerbats">Bats</string>
   <string name="your_total_score">Your total score: %1$d from %2$d!</string>
-  <string name="you_final_result">Your final result: </string>
+  <string name="you_final_result">Your final result:  </string>
   <string name="bangkok">bangkok</string>
   <string name="send_email_text">Hey!\nMy total score in Travelers\' notes quiz: %1$d from %2$d! (https://t.me/travelernote) \nYou can find this amazing app on GitHub: https://github.com/svcat/TravellersQuiz</string>
   <string name="send_email_subject">My score from Travelers\' notes quiz</string>
   <string name="kuala_lower_case">kuala</string>
   <string name="lumpur_lower_case">lumpur</string>
   <string name="lumpur_kuala_lower_case">lumpur kuala</string>
+  <string name="right_answer">Hooray! The answer is correct!</string>
+  <string name="wrong_answer">Try again or view answers for help</string>
 </resources>
